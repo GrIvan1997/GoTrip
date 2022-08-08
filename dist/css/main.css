@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+:root{
+--container-width: 1270px;
+--container-padding: 15px;
+--secondary:rgba(15, 31, 28, 0.5);;
+}
+body {
+    font-family: 'Poppins',sans-serif;
+    background-color: #f6f6f6;
+    color: #0f1f1c;
+}
+.none{
+    display: none !important;
+}
+.container{
+    max-width:var(--container-width) ; 
+    margin:  0 auto;
+    padding: var(--container-padding);
+}
+.container-right{
+    padding-left: calc((100% - 1270px)/2 + 15px) ;
+}
+.header{
+    overflow: hidden;
+    min-height: 854px;
+    padding-top: 44px;
+    background: linear-gradient(132.05deg, #428E5F -17.38%, #112120 78.4%), #204434;
+    color: #ffffff;
+}
+.header::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 96px;
+    background-image: url(../img/header/header-bottom.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.header__top{
+    margin-bottom: 86px;
+    
+}
+.header a{
+     color: #ffffff;
+}
+.header__content{
+    position: relative;
+    z-index: 100;
+    max-width: 592px;
+}
+.nav{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 80px;
+}
+.nav__logo{
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 700;
+}
+.nav__list{
+    display: flex;
+    column-gap: 80px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.nav__login{
+    align-items: center;
+    display: flex;
+    column-gap: 25px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.btn{
+    border-radius: 100px;
+    font-size: 15px;
+    font-weight: 500;
+    display: inline-block;
+    padding: 13px 44px;
+    background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%),
+linear-gradient(0deg, #FFFFFF, #FFFFFF);
+}
+.btn:hover{
+    color: red
+}
+.btn:active{
+    position: relative;
+    top: 1px;
+}
+.header__row{
+    display: flex;
+}
+.header__img{
+    flex-grow: 1;
+ position: relative;
+}
+.header__img img{
+    position: absolute;
+    top: -176px;
+    right: -86px;
+    max-width: unset;
+    width: 894px;
+    height: 940px;
+   
+    
+}
+.header__badge{
+    padding: 11px 12px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.25);
+    font-size: 18px;
+    font-weight: 500;
+    display: inline-block;
+    margin-bottom: 7px;
+}
+.header__title{
+ font-size: 55px;
+ margin-bottom: 30px;
+
+}
+.header__text{
+margin-bottom: 68px;
+font-size: 25px;
+font-weight: 700;
+color: rgba(255,255,255,0.5);
+}
+.header__btn{
+    display: inline-block;
+  font-size: 25px;
+  font-weight: 600;
+  padding: 27px 48px;
+  border-radius: 27px;
+  background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%),
+linear-gradient(0deg, #FFFFFF, #FFFFFF);
+}
+.destinations{
+    padding: 96px 0 100px;
+}
+.destinations__title{
+    margin-bottom: 15px;
+  font-size: 55px;
+  font-weight: 600;
+}
+.destinations__title span{
+ font-size: 30px;
+}
+.destinations__text{
+ margin-bottom: 60px;
+ font-size: 25px;
+ font-weight: 500;
+ color: var(--secondary);
+}
+.destinations__row{
+    display: flex;
+    column-gap: 50px;
+}
+.destinations__content{
+    max-width: 456px;
+}
+.destinations__slider{
+    flex-shrink: 0;
+    overflow-x:hidden;
+width: 1110px;
+}
+.slider{
+    position: relative;
+
+}
+.slider__item{
+    margin-top: 27px;
+    width: 335;
+    height: 402;
+    object-fit: cover;
+    border-radius: 35px;
+    transition: 0.2s ease-in;
+}
+.slider .center .slider__item{
+    margin-top: 0;
+    width: 380px;
+    height: 456px;
+}
+
+.slider__btn{
+    width: 68px;
+    height: 68px;
+    border-radius: 50px;
+    background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%),
+    linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    display: flex;
+    padding-left: 26px;
+    align-items: center;
+}
+.slider__btn--prev{
+    z-index: 9;
+    position: absolute;
+    left: -27px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: 26px;
+    justify-content: flex-start;
+}
+.slider__btn--next{
+    z-index: 9;
+    position: absolute;
+    right: -27px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-right: 26px;
+    justify-content: flex-end;
+}
