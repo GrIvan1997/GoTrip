@@ -211,3 +211,120 @@ width: 1110px;
     padding-right: 26px;
     justify-content: flex-end;
 }
+.customers{
+
+}
+.customers__row{
+    column-gap: 60px;
+    justify-content: space-between;
+display: flex;
+}
+.customers__img img{
+  
+width: 478px;
+height: 538px;
+border-radius: 50px;
+}
+.customers__content{
+
+}
+.customers__title{
+    font-size: 45px;
+    font-weight: 500;
+}
+.review{}
+.review__client{
+    padding-top: 33px;
+    display: flex;
+    column-gap: 33px;
+
+}
+.review__client-avatar{
+    display: flex;
+    align-items: center;
+    background-color: #FFAA99;
+    width: 125px;
+    border-radius: 100px;
+
+}
+.review__client-desc{
+  
+
+}
+.review__text{
+    color: var(--secondary);
+    font-size: 22px;
+
+    margin-top: 60px;
+}
+.name{
+    font-size: 33px;
+    font-weight: 500;
+}
+.location{}
+
+.review_reit{
+    margin-top: 30px;
+}
+.ofer{
+    margin-top: 350px;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../img/cta/cta-el-01.svg);
+    background-repeat: no-repeat;
+    background-color: #FFFFFF;
+}
+.ofer__btn{
+    margin-top: 78px;
+    border-radius: 100px;
+    font-size: 15px;
+    font-weight: 500;
+    display: inline-block;
+    padding: 13px 44px;
+    background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%),
+linear-gradient(0deg, #FFFFFF, #FFFFFF);
+color: #FFFFFF;
+}
+.ofer__title{
+    font-weight: 500;
+    font-size: 45px; 
+}
+.ofer__desk{ 
+    font-size: 30px;
+ 
+    margin-top: 30px;
+       color: var(--secondary);}
+    
+ .subscribe{
+    margin-top: 135px;
+
+ }
+.subscribe__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.subscribe__title{
+    
+    font-weight: 600;
+font-size: 55px;
+}
+.subscribe-form{
+    background-color: #FFFFFF;
+    border-radius: 35px;
+
+}
+.subscribe-form__input{}
+.btn--subscribe{
+    margin-top: 34px;
+    margin-left: 140px;
+    width: 300px;
+height: 105px;
+font-weight: 600;
+font-size: 25px;
+color: #FFFFFF;
+}
+             
