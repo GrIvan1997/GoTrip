@@ -27,11 +27,11 @@ body {
     background: linear-gradient(132.05deg, #428E5F -17.38%, #112120 78.4%), #204434;
     color: #ffffff;
 }
-.header::after{
+header::after{
     content: "";
     position: absolute;
     left: 0;
-    bottom: 0;
+    
     width: 100%;
     height: 96px;
     background-image: url(../img/header/header-bottom.svg);
@@ -66,6 +66,9 @@ body {
     column-gap: 80px;
     font-size: 15px;
     font-weight: 500;
+}
+.nav__toggle{
+    display: none;
 }
 .nav__login{
     align-items: center;
@@ -277,6 +280,7 @@ border-radius: 50px;
     background-color: #FFFFFF;
 }
 .ofer__btn{
+    margin-bottom: 100px;
     margin-top: 78px;
     border-radius: 100px;
     font-size: 15px;
@@ -288,6 +292,8 @@ linear-gradient(0deg, #FFFFFF, #FFFFFF);
 color: #FFFFFF;
 }
 .ofer__title{
+    margin-top: 50px;
+
     font-weight: 500;
     font-size: 45px; 
 }
@@ -308,18 +314,20 @@ color: #FFFFFF;
 
 }
 .subscribe__title{
-    
+    text-align: center;
     font-weight: 600;
 font-size: 55px;
 }
 .subscribe-form{
+    margin-top: 200px;
+
     background-color: #FFFFFF;
     border-radius: 35px;
 
 }
 .subscribe-form__input{}
 .btn--subscribe{
-    margin-top: 34px;
+   
     margin-left: 140px;
     width: 300px;
 height: 105px;
@@ -328,3 +336,67 @@ font-size: 25px;
 color: #FFFFFF;
 }
              
+@media (max-width:1200px){
+  .destinations__slider{
+    width: 900px;
+  }
+
+}
+@media (max-width:1000px){
+    .nav__list{
+        display: none;
+        column-gap: 80px;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .nav__login{
+        display: none;
+        align-items: center;
+        column-gap: 25px;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .nav__toggle{
+    display: block;
+}
+.header__img img{
+    right: -256px;
+}
+}
+@media (max-width:850px){
+    .header{
+        min-height: unset;
+    }
+  .header__row{
+    align-items: center;
+    flex-direction: column;
+  }
+  .header__img img{
+    width: 70%;
+    height: auto;
+    position: static;
+  }
+  .header__title{
+    font-size: 44px;
+  }
+  .header__text{
+    margin-bottom: 48px;
+font-size: 20px;
+  }
+  .header__badge{
+    padding: 7px 6px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.25);
+    font-size: 14px;
+    font-weight: 500;
+    display: inline-block;
+    margin-bottom: 7px;
+  }
+}
+@media (max-width:700px){
+
+}
+@media (max-width:320px){
+   
+
+}
